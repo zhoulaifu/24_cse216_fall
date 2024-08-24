@@ -51,20 +51,14 @@ Zhoulai Fu \<zhoulai dot fu at sunykorea.ac.kr\>  or  \<zhoulai dot fu at stonyb
 
 Ha Yeonkyung \<ha.yeonkyung@stonybrook.edu\>
 
+# Course overall schedule
 
-# Overall Schedule (All time is Korean time)
+- **Lectures:** Mondays and Wednesdays, 2:00 PM - 3:20 PM, Room B207
+- **Recitation:** Monday, 3:30 PM - 4:25 PM, Room B207
+- **Homework:** Announced every Wednesday, with submissions due by the following Wednesday at 11:59 PM KST.
+- **Office Hours:** Mondays, 3:25 PM - 4:25 PM, and Wednesdays, 4:30 PM - 5:30 PM,  Room B424.
+- **TA office hours:**  TBA
 
-Lectures: TU, TH   9:00  - 10:20, at B203
-
-Recitation: TH  14:00  - 14:55, at B203
-
-For most recitations, we may have a quiz or homework announcement. Quiz is due by the end of the recitation. Homework is due by next Thursday 12h59 (included). 
-
-Instructor's Office hours: TU and TH 10:25 - 11:25 at B424
-
-TA office hours:  MO and WE from 10:20 to 12:00 and from 12:50 to 15:25 at CS Lobby
-
-Final: Dec. 14 (Thursday) 9:00 - 11:30, at B203
 
 
 
