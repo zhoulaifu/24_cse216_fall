@@ -54,7 +54,7 @@ OCaml learning material: <https://ocaml.org/learn/>
 **Zhoulai Fu**  
 Email: \<zhoulai dot fu at sunykorea dot ac dot kr\>  
 
-# Teaching Assistants (TAs)
+# Teaching Assistants (TA)
 
  **Young Won Choi**  
    Email: \<youngwon dot choi at stonybrook dot edu\>
@@ -113,7 +113,7 @@ Note: A documented hospital visit alone is not sufficient to justify force majeu
 
 # Grading Policy
 
-- Grading will be conducted by both the TAs and the Instructor.
+- Grading will be conducted by both the TA and the Instructor.
 - Factual errors in grades will be corrected.
 - Non-factual grade disputes will not be considered.
 - Plagiarism, including the use of AI-generated solutions for homework, will result in a grade of 0 and will be reported. Students involved may be addressed privately.
@@ -127,10 +127,10 @@ Note: A documented hospital visit alone is not sufficient to justify force majeu
 
 # Email Policy
 
-- Please include **[CSE215]** in the subject line for all course-related email communication with the instructor.
+- Please include **[CSE216]** in the subject line for all course-related email communication with the instructor.
 - Use the instructor's SUNY Korea email address (see above) whenever possible.
 - You can expect a reply within 72 hours. If you do not receive a response within this timeframe, kindly send a reminder.
-- Emails without **[CSE215]** in the subject line may be missed.
+- Emails without **[CSE216]** in the subject line may be missed.
 
 # ChatGPT Policy
 
@@ -142,8 +142,8 @@ We adhere to policies similar to those outlined in [Stanford's Generative AI Pol
 
 # Office Hours Policy
 
-- The instructor and TAs will be available during scheduled office hours.
-- Availability outside of office hours is not guaranteed, and the instructor and TAs may respectfully decline appointment requests beyond these times.
+- The instructor and TA will be available during scheduled office hours.
+- Availability outside of office hours is not guaranteed, and the instructor and TA may respectfully decline appointment requests beyond these times.
   
 # Disability Support Services (DSS) Statement
 
