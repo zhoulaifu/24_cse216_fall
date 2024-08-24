@@ -68,78 +68,83 @@ Email: \<zhoulai dot fu at sunykorea dot ac dot kr\>
 <https://stonybrook.zoom.us/j/99671076796?pwd=TGFuZ1lzSXpnSWlpMDB2a2tCRmozUT09>
 
 
+# Numerical Grades
 
-# Grading: Numerical Scores
-
--   Quiz (in-class): 15%
--   Homework (take-home): 15% 
--   Midterm1: 20%
--   Midterm2: 20%
--   Final: 30%
--   Students who consistently participate or provide constructive feedback will receive a bonus of 0.5% or 1%. However, any student with three or more class absences will not be eligible for this bonus.
-
-Namely, the numerical grade for the course will be calculated as:
-
-```
-def numerical_grade(Quiz, Homework, Midterm1, Midterm2, Final, Bonus):
-    return 0.15 * Quiz + 0.15 * Homework + 0.20 * Midterm1 + 0.20 * Midterm2 + 0.30 * Final + Bonus
-```
+-   Homeworks: 20%
+-   Midterm1: 25%
+-   Midterm2: 25%
+-   Final: 25%
+-   Attendance: 5% 
+-   Bonus: Students who consistently participate or provide constructive feedback will receive a bonus of  0.5 or 1. 
 
 
 
 
-# Grading: Letter scores 
+# Letter Grades
 
+Absolute grading will be applied:
 
-### The following algorithm  guarantees that (a) around 50% of students get an A or A-, and (b) students will earn a grade higher than or equivalent to what they would receive with a traditional absolute grading system, barring infrequent boundary situations.
+- **A:** [93, 100] 
+- **A-:** [90, 93)
+- **B+:** [87, 90)
+- **B:** [83, 87)
+- **B-:** [80, 83)
+- **C+:** [77, 80)
+- **C:** [73, 77)
+- **C-:** [70, 73)
+- **D+:** [67, 70)
+- **D:** [63, 67)
+- **F:** [0, 63)
 
+# Definition of Force Majeure in Our Policies
 
-We initiate the grading process by calculating numerical scores for each student and the median of these scores. We then define a cutoff score, denoted by 'c',  which is the minimum of the median score and 90. Letter grades will be allocated based on the following ranges:
+Force majeure in our policies includes, but is not limited to,  
+- documented illness or family emergencies.
 
-- A: Greater than 0.7*c + 30 up to 100
-- A-: Greater than 'c' up to 0.7*c + 30
-- B+: Greater than 'c - 4' up to 'c'
-- B: Greater than 'c - 7' up to 'c - 4'
-- B-: Greater than 'c - 10' up to 'c - 7'
-- C+: Greater than 'c - 14' up to 'c - 10'
-- C: Greater than 'c - 17' up to 'c - 14'
-- C-: Greater than 'c - 20' up to 'c - 17'
-- D+: Greater than 'c - 24' up to 'c - 20'
-- D: Greater than 'c - 27' up to 'c - 24'
-- D-: Greater than 'c - 30' up to 'c - 27'
-- F: Scores equal to or less than 'c - 30'
+Note: A documented hospital visit alone is not sufficient to justify force majeure. The doctor's note must clearly state the reason for the absence and the recommended period of absence.
 
-Please note that the boundaries for the letter grades are exclusive on the lower end and inclusive on the higher end.
+# Attendance Policy
 
-Let's say that the cutoff value 'c' is 85. 
+- Attendance will be checked irregularly.
+- Arriving late will count as half attendance. "Late" is defined as arriving after the attendance check has been completed. After the attendance check, the TA/Instructor will mark any absences.
+- Excuses are granted only in cases of force majeure. See the definition above for "force majeure."
+- In the event of discrepancies between the signed attendance sheet and actual physical presence, names will be called. Students involved may be addressed privately.
+- In accordance with Korean law, more than 20% absence will result in an automatic F grade.
 
-For a letter grade 'B+', the score range is greater than 'c - 4' (85 - 4 = 81) and up to 'c' (85). This means that if a student's score is 81.5, their letter grade would be 'B+'. However, if their score is exactly 81, they would not receive a 'B+', but would instead fall into the B range.
+# Grading Policy
 
-The following Python code implements this grading scheme
+- Grading will be conducted by both the TAs and the Instructor.
+- Factual errors in grades will be corrected.
+- Non-factual grade disputes will not be considered.
+- Plagiarism, including the use of AI-generated solutions for homework, will result in a grade of 0 and will be reported. Students involved may be addressed privately.
+- Typewritten submissions are recommended; illegible handwriting may result in a grade of 0.
 
-```
-def get_letter_grade(score, c):
-    boundaries = {
-        'A':  0.7*c + 30,
-        'A-': c,
-        'B+': c - 4,
-        'B':  c - 7,
-        'B-': c - 10,
-        'C+': c - 14,
-        'C':  c - 17,
-        'C-': c - 20,
-        'D+': c - 24,
-        'D':  c - 27,
-        'D-': c - 30,
-    }
-    
-    for grade, boundary in boundaries.items():
-        if score > boundary:
-            return grade
-    return 'F'
-```
+# Late Homework Policy
 
+- Late homework will not be accepted. 
+- Homeworks submitted after the deadline are only permissible in cases of force majeure. See above for the definition of "force majeure."
+-  Once homework solutions have been released, no submissions will be accepted under any circumstances.
 
+# Email Policy
+
+- Please include **[CSE215]** in the subject line for all course-related email communication with the instructor.
+- Use the instructor's SUNY Korea email address (see above) whenever possible.
+- You can expect a reply within 72 hours. If you do not receive a response within this timeframe, kindly send a reminder.
+- Emails without **[CSE215]** in the subject line may be missed.
+
+# ChatGPT Policy
+
+We adhere to policies similar to those outlined in [Stanford's Generative AI Policy Guidance](https://communitystandards.stanford.edu/generative-ai-policy-guidance).
+
+- In general, the use of or consultation with generative AI is treated similarly to receiving assistance from another person.
+- Using generative AI tools like ChatGPT to substantially complete homework assignments is not permitted.
+- Students should acknowledge any use of generative AI tools (beyond incidental use) and should default to disclosing such assistance when in doubt.
+
+# Office Hours Policy
+
+- The instructor and TAs will be available during scheduled office hours.
+- Availability outside of office hours is not guaranteed, and the instructor and TAs may respectfully decline appointment requests beyond these times.
+  
 # Disability Support Services (DSS) Statement
 
 If you have a physical, psychological, medical or learning disability that may impact your course work, please contact  One-Stop Service Center, Academic Building A201, (82) 32-626-1117. They will determine with you what accommodations, if any, are necessary and appropriate. All information and documentation is confidential.
@@ -155,9 +160,10 @@ Each student must pursue his or her academic goals honestly and be personally ac
 
 
 
-
 # Critical incident management
 
 SUNY Korea expects students to respect the rights,
 privileges, and property of other people. Faculty are required to report to the Department of Academic Affairs any disruptive behavior that interrupts their ability to teach, compromises the safety of the learning environment, or inhibits students' ability to learn.
+
+
 
