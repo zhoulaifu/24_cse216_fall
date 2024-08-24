@@ -41,15 +41,6 @@ OCaml learning material: <https://ocaml.org/learn/>
 
 
 
-# Instructor
-
-Zhoulai Fu \<zhoulai dot fu at sunykorea.ac.kr\>  or  \<zhoulai dot fu at stonybrook.edu\>
-
-
-
-# Teaching Assistants
-
-Ha Yeonkyung \<ha.yeonkyung@stonybrook.edu\>
 
 # Course overall schedule
 
@@ -58,6 +49,16 @@ Ha Yeonkyung \<ha.yeonkyung@stonybrook.edu\>
 - **Homework:** Announced every Wednesday, with submissions due by the following Wednesday at 11:59 PM KST.
 - **Office Hours:** Mondays, 3:25 PM - 4:25 PM, and Wednesdays, 4:30 PM - 5:30 PM,  Room B424.
 - **TA office hours:**  TBA
+
+
+**Zhoulai Fu**  
+Email: \<zhoulai dot fu at sunykorea dot ac dot kr\>  
+
+# Teaching Assistants (TAs)
+
+ **Young Won Choi**  
+   Email: \<youngwon dot choi at stonybrook dot edu\>
+
 
 
 
