@@ -50,6 +50,7 @@ OCaml learning material: <https://ocaml.org/learn/>
 - **Office Hours:** Mondays, 3:25 PM - 4:25 PM, and Wednesdays, 4:30 PM - 5:30 PM,  Room B424.
 - **TA office hours:**  TBA
 
+# Instructor
 
 **Zhoulai Fu**  
 Email: \<zhoulai dot fu at sunykorea dot ac dot kr\>  
