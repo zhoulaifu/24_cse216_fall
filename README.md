@@ -45,7 +45,7 @@ OCaml learning material: <https://ocaml.org/learn/>
 # Course overall schedule
 
 - **Lectures:** Mondays and Wednesdays, 2:00 PM - 3:20 PM, Room B207
-- **Recitation:** Monday, 3:30 PM - 4:25 PM, Room B207
+- **Recitation:** Wednesday, 3:30 PM - 4:25 PM, Room B207
 - **Homework:** Announced every Wednesday, with submissions due by the following Wednesday at 11:59 PM KST.
 - **Office Hours:** Mondays, 3:25 PM - 4:25 PM, and Wednesdays, 4:30 PM - 5:30 PM,  Room B424.
 - **TA office hours:**  TBA
