@@ -48,7 +48,7 @@ OCaml learning material: <https://ocaml.org/learn/>
 - **Recitation:** Wednesday, 3:30 PM - 4:25 PM, Room B207
 - **Homework:** Announced every Wednesday, with submissions due by the following Wednesday at 11:59 PM KST.
 - **Office Hours:** Mondays, 3:25 PM - 4:25 PM, and Wednesdays, 4:30 PM - 5:30 PM,  Room B424.
-- **TA office hours:**  TBA
+- **TA office hours:**  Thursday 1:00 PM - 3:00 PM 
 
 # Instructor
 
