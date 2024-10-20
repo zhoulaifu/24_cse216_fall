@@ -1,7 +1,7 @@
 (* Guideline
  
 Different from previous exercise: 
-Do not submit a pdf file. Fill in all the  'failwith "Not Implemented"' parts of this file, "09.ml", and then submit it on Brightspace.  
+Do not submit a pdf file. Fill in all the  'failwith "Not Implemented"' parts of this file, and then submit it on Brightspace.  
 
 
 Special grading criteria:
