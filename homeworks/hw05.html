@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Taylor Expansion Again &lpar;60&rpar;</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: {inlineMath: [['$', '$']]}, messageStyle: "none" });
+    </script>
+<h1 id="taylor-expansion-again-60">Taylor Expansion Again (60)</h1>
+<ol>
+<li>
+<p>Start by researching how to write comments in OCaml. Then explore the exponential function <code>**</code> in OCaml. What is its type signature? Write your result of this question as a comment below.</p>
+<p>Hint: In the toplevel, you can type <code>( **);;</code> to determine this. Note the added space before <code>**</code> ensures it isn't interpreted as a comment.</p>
+</li>
+<li>
+<p>Implement a factorial function <code>factorial</code> with a type signature <code>int -&gt; int</code>. For example, computing the factorial of 5 should yield a result of 120. Fill in the following:</p>
+</li>
+</ol>
+<pre><code class="language-ocaml"><span class="hljs-keyword">let</span> <span class="hljs-keyword">rec</span> factorial n = 
+    <span class="hljs-comment">(*TODO*)</span>
+</code></pre>
+<ol start="3">
+<li>Design a Taylor expansion function <code>taylor</code> with the type <code>float-&gt;int-&gt;float</code>. This function should compute Taylor expansion of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>e</mi><mi>x</mi></msup></mrow><annotation encoding="application/x-tex">e^x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6644em;"></span><span class="mord"><span class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6644em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">x</span></span></span></span></span></span></span></span></span></span></span> around 0, of the first n terms. When you call your function with the arguments <code>taylor 0.1 3</code>, it should return exactly 1.105. Using <code>taylor 0.1 10</code> should produce a result close to but different from 1.105. (1) Include your Taylor function implementation below and (2) Record the result of <code>taylor 0.1 10</code> as a comment.  Fill in the following:</li>
+</ol>
+<pre><code class="language-ocaml"><span class="hljs-keyword">let</span> <span class="hljs-keyword">rec</span> taylor x n = 
+    <span class="hljs-comment">(*TODO*)</span>
+
+
+<span class="hljs-comment">(*Result of taylor 0.1 10 is TODO*)</span>
+</code></pre>
+<h1 id="tower-of-hanoi-40">Tower of Hanoi (40)</h1>
+<p>First, play the game of Tower of Hanoi yourself to get an idea: <a href="https://www.mathsisfun.com/games/towerofhanoi.html">https://www.mathsisfun.com/games/towerofhanoi.html</a></p>
+<p>After you understand the rule of the game, implement a function <code>move</code> of type</p>
+<pre><code>        int -&gt; string -&gt; string -&gt; string -&gt; unit 
+</code></pre>
+<p>so that <code>move n src dst aux</code> moves n disks from src to dst using aux as an auxillary disk.</p>
+<p>Hint for the implementation:</p>
+<ul>
+<li>if n is 1,
+print the movement from src to dst</li>
+<li>otherwise,
+move n-1 disks from src to aux,
+move 1 disk from src to dst, and
+move n-1 disks from aux to dst.</li>
+<li>use Printf.printf &quot;Move from %s to %s\n&quot;</li>
+<li>for a series of expressions use <code>begin ... end</code>, e.g. <code>begin move...; move...; move... end.</code></li>
+<li>You probably need to do some additional research and much try-and-error to get your ocaml code work and run.</li>
+</ul>
+<p>Task: Fill in the following:</p>
+<pre><code class="language-ocaml"><span class="hljs-keyword">let</span> <span class="hljs-keyword">rec</span> move n src dst aux = 
+   <span class="hljs-comment">(* TODO *)</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="hljs-comment">(* for testing *)</span>   
+<span class="hljs-keyword">let</span> test <span class="hljs-literal">()</span> =
+    move <span class="hljs-number">3</span> <span class="hljs-string">&quot;A&quot;</span> <span class="hljs-string">&quot;C&quot;</span> <span class="hljs-string">&quot;B&quot;</span>
+
+<span class="hljs-keyword">let</span> _ = test <span class="hljs-literal">()</span>
+</code></pre>
+<p>How to test: Suppose the code above is in a file <code>hanoi.ml</code>, then running <code>ocaml hanoi.ml</code> will generate:</p>
+<pre><code>Move from A to C
+Move from A to B
+Move from C to B
+Move from A to C
+Move from B to A
+Move from B to C
+Move from A to C
+</code></pre>
+
+            <script async src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
+            
+        </body>
+        </html>
